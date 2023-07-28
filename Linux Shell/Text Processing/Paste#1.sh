@@ -1,3 +1,5 @@
-#! HackerRank
+#!/bin/bash
+# Replace the newlines in the input file with semicolons as demonstrated in the sample.
 
-paste -d';' -s
+# Solution
+paste -s -d ';'
