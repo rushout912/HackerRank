@@ -1,3 +1,0 @@
-#! HackerRank
-
-echo "HELLO"
