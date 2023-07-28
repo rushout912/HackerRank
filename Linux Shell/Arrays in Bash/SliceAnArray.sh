@@ -1,3 +1,4 @@
+#!/bin/bash
 #! HackerRank
 
 i=0
