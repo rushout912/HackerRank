@@ -5,10 +5,10 @@ class Main:
         self.nums = tuple(map(int, input().split()))
         
     def returnZero(self):
-        print(np.zeros(self.nums, dtype = np.int))
+        print(np.zeros(self.nums, dtype = int))
     
     def returnOne(self):
-        print(np.ones(self.nums, dtype = np.int))
+        print(np.ones(self.nums, dtype = int))
         
     def output(self):
         self.returnZero()

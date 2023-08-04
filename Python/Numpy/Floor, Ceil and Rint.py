@@ -1,4 +1,5 @@
 import numpy as np
+np.set_printoptions(legacy='1.13') #Note: In order to get the correct output format, add the line np.set_printoptions(legacy='1.13') below the numpy import.
 
 class Main:
     def __init__(self):
