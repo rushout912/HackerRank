@@ -3,6 +3,11 @@ def mutate_string(string, position, character):
     l[position] = character
     return "".join(l)
 
+# Solution 2: Slice the string and join it back.
+"""def mutate_string(string, position, character):
+    return string[:position] + character + string[position+1:]"""
+
+
 if __name__ == '__main__':
     s = input()
     i, c = input().split()
