@@ -5,4 +5,7 @@ if __name__ == '__main__':
         b = int(input())
         B = set(input().split())
 
-        print(A.issubset(B))    #A <= B
+        if 0 < a < 1001 and 0 < b < 1001:
+            print(A.issubset(B))    #A <= B
+        else:
+            raise ValueError("Number of elements in each set should be between 1 and 1000")
