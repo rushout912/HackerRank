@@ -4,6 +4,10 @@ class Main:
     def __init__(self):
         self.d = deque()
         self.n = int(input())
+        if 0 < self.n <=100: # 0 < N <= 100
+            pass
+        else:
+            raise ValueError("The number of operations must be between 1 and 100.")
         
         for _ in range(self.n):
             self.s = input().split()
