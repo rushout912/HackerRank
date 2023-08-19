@@ -16,5 +16,9 @@ def score_words(words):
 
 
 n = int(input())
+if 1 <= n <= 20:
+    pass
+else:
+    raise ValueError('The number of words must be between 1 and 20.')
 words = input().split()
 print(score_words(words))
