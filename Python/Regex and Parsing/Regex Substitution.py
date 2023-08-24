@@ -3,6 +3,10 @@ import re
 class Main:
     def __init__(self):
         self.n = int(input())
+        if 0 < self.n < 100:
+            pass
+        else:
+            raise ValueError('Number of lines must be between 1 and 100.')
         
         for _ in range(self.n):
             self.s = input()

@@ -3,6 +3,10 @@ import re
 class Main():
     def __init__(self):
         self.s = input()
+        if 0 < len(self.s) < 100:
+            pass
+        else:
+            raise ValueError("The length of the string(S) must be between 0 and 100")
         self.li = re.search(r'([a-zA-Z0-9])\1+', self.s)
         
     def output(self):

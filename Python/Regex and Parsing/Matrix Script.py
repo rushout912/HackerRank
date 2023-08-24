@@ -1,11 +1,16 @@
+#!/bin/python3
+import math
+import os
+import random
 import re
+import sys
 
-n, m = map(int, raw_input().split())
+n, m = map(int, input().split())
 a = []
 
 for _ in range(n):
-    a.append(raw_input()[:m])
+    a.append(input()[:m])
 
 s = ''.join(''.join(e) for e in zip(*a))
 result = re.sub(r'([a-zA-Z0-9])([^a-zA-Z0-9]+)(?=[a-zA-Z0-9])', r'\1 ', s)
-print result
+print (result)

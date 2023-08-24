@@ -3,6 +3,10 @@ import re
 class Main():
     def __init__(self):
         self.s = input()
+        if 0 < len(self.s) < 100:
+            pass
+        else:
+            raise ValueError('Length of string is not in range')
         self.c = 'qwrtypsdfghjklzxcvbnm'
         
     def output(self):

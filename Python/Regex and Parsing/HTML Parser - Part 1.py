@@ -17,6 +17,10 @@ class MyHTMLParser(HTMLParser):
 
 if __name__ == '__main__':
     n = int(input())
+    if 0 < n < 100:
+        pass
+    else:
+        print('The number of lines in a HTML code snippet must be between 1 and 100.')
     s = ''
     for i in range(n):
         temp = input()
